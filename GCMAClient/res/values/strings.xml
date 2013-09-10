@@ -3,6 +3,11 @@
 
     <string name="app_name">GCMAClient</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+	<string name="heading_name">Group Coordination Mobile Application</string>
+	<string name="group_name">Select your group</string>
+	<string name="select_button">Select</string>
+	<string name="history">History</string>
+	<string name="send">Send</string>
+	<string name="enterYourMessage">Enter your message</string>
 
 </resources>
