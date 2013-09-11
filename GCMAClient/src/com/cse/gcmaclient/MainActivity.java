@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
 	static final int BUFFER_SIZE = 516;
 	String Username = "meuru";
 	static final String Blank = "0";
+	
+	private Communicator sender;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,8 @@ public class MainActivity extends Activity {
 
 		// add click listeners to the buttons
 		sendButton.setOnClickListener(sendButtonListener);
-
-		new Communicator().execute("I");
+		sender = new Communicator();
+		sender.execute("I"); 		//Initialize the user
 	}
 
 	public OnClickListener sendButtonListener = new OnClickListener() {
@@ -51,9 +53,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			if (chatMessageEditText.getText().length() > 0) {
-				//sendChatMessage();
-
-				// Update Interface States
+				sender.execute("M");
 				chatMessageEditText.setText("");
 				// MessageToInput.setText("");
 			}
@@ -104,16 +104,16 @@ public class MainActivity extends Activity {
 
 		protected String doInBackground(String... args) {
 			try {
-				initializeUser();
-
-				byte[] buf;
-				// if (!input.getText().toString().isEmpty()) {
-				// buf = input.getText().toString().getBytes();
-				// } else {
-				buf = ("A new message frddddddom meuru").getBytes();
-				// }
-				sendPacket(buf);
 				
+				switch (args[0].charAt(0)){
+				case 'I' :
+					initializeUser();
+					break;
+				case 'M' :
+					sendChatMessage();
+					break;
+				
+				}				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
