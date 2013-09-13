@@ -28,6 +28,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.cse.gcmaclient.CommunicationSender"
+            android:label="@string/message_sender" 
+            android:theme="@android:style/Theme.NoDisplay">
+        </activity>
     </application>
 
 </manifest>

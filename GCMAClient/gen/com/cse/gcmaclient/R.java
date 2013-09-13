@@ -29,7 +29,7 @@ public final class R {
     }
     public static final class id {
         public static final int TableLayout1=0x7f090000;
-        public static final int action_settings=0x7f09000c;
+        public static final int action_settings=0x7f09000b;
         public static final int chatMessageEditText=0x7f090009;
         public static final int chatScrollView=0x7f090006;
         public static final int chatTableScrollView=0x7f090007;
@@ -40,7 +40,6 @@ public final class R {
         public static final int tableRow2=0x7f090003;
         public static final int tableRow3=0x7f090005;
         public static final int tableRow4=0x7f090008;
-        public static final int textView1=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -56,6 +55,7 @@ public final class R {
         public static final int group_name=0x7f060003;
         public static final int heading_name=0x7f060002;
         public static final int history=0x7f060005;
+        public static final int message_sender=0x7f060008;
         public static final int select_button=0x7f060004;
         public static final int send=0x7f060006;
     }

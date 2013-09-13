@@ -45,10 +45,11 @@
 
         <ScrollView
             android:id="@+id/chatScrollView"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content" 
             android:layout_span="2"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:fadeScrollbars="false">
 
             <TableLayout
                 android:id="@+id/chatTableScrollView"

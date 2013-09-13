@@ -9,5 +9,6 @@
 	<string name="history">History</string>
 	<string name="send">Send</string>
 	<string name="enterYourMessage">Enter your message</string>
+	<string name="message_sender">Message Sender</string>
 
 </resources>
