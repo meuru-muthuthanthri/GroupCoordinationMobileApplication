@@ -28,7 +28,7 @@ import android.widget.TextView;
  *
  */
 public class MainActivity extends Activity {
-	public static final String SERVERIP = "10.10.9.166";
+	public static final String SERVERIP = "10.8.108.181";
 	public static final int SERVERPORT = 9999;
 	public static final String MESSAGE = "com.example.GCMA.CHAT";
 	public static final String MESAGE_TYPE = "com.example.GCMA.TYPE";
